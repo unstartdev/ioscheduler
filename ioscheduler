@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+source /etc/default/ioscheduler
+echo $ioscheduler > /sys/block/$diskname/queue/scheduler

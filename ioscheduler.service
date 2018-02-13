@@ -1,0 +1,9 @@
+[Unit]
+Description=Switch I/O scheduler
+
+[Service]
+Type=oneshot
+ExecStart=/usr/lib/systemd/scripts/ioscheduler
+
+[Install]
+WantedBy=multi-user.target
